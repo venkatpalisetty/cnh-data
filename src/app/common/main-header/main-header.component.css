@@ -1,0 +1,45 @@
+ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu{
+    height: 40px;
+    width: calc(100% - 178px);
+    float: left;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.main-menu--item {
+    height: 40px;
+    width: 270px;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-menu--item a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+}
+
+.main-menu--item a.active, .main-menu--item a:not(.disabled):hover {
+    font-weight: 700;
+    position: relative;
+}
+
+.main-menu--item a:after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 208px;
+}
+
+.main-menu--item a.active:after, .main-menu--item a:not(.disabled):hover:after {
+    background-color: #f1b514;
+}
